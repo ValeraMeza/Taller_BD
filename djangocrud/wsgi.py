@@ -1,16 +1,15 @@
 """
-WSGI config for django_portfolio project.
+WSGI config for djangocrud project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
+# Cambiamos 'django_portfolio.settings' por 'djangocrud.settings' 
+# para que coincida con el nombre de tu carpeta actual.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangocrud.settings')
 
 application = get_wsgi_application()
